@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Auto Window Tinting service in Indian Land, SC - Discover more about Auto Window Tinting service in Indian Land, SC..">
+  <meta name="keywords" content="{}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="/auto-window-tinting-service-in-indian-land-sc">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1006/1006771.png">
+  <title>Auto Window Tinting service in Indian Land, SC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --primary: #0a2540;
+      --accent: #d4a853;
+      --accent-light: #f5e6c8;
+      --surface: #f8f5f0;
+      --white: #ffffff;
+      --text-dark: #0a2540;
+      --text-mid: #4a5568;
+      --text-light: #718096;
+      --border: #e8e0d5;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--white);
+      color: var(--text-dark);
+    }
+
+    h1, h2, h3, .display-font {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* ── NAVBAR ── */
+    .upper-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 48px;
+      height: 72px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(10,37,64,0.06);
+    }
+
+    .brand-name a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-name a span {
+      color: var(--accent);
+    }
+
+    .menu-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .menu-links a {
+      color: var(--text-mid);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .menu-links a:hover {
+      color: var(--primary);
+      background: var(--surface);
+    }
+
+    .menu-links .contact-btn {
+      background: var(--primary);
+      color: var(--white) !important;
+      padding: 10px 22px !important;
+      border-radius: 8px;
+      font-weight: 600;
+      border: 2px solid var(--primary);
+      transition: all 0.25s !important;
+    }
+
+    .menu-links .contact-btn:hover {
+      background: transparent !important;
+      color: var(--primary) !important;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* ── DROPDOWN FIX: scrollable + flip-up when off-screen ── */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--white);
+      min-width: 220px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 12px 40px rgba(10,37,64,0.12);
+      z-index: 200;
+      overflow: hidden;
+
+      /* SCROLLABLE when content is taller than available viewport space */
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+
+      /* Smooth scrollbar styling */
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+
+    .dropdown-content::-webkit-scrollbar {
+      width: 6px;
+    }
+    .dropdown-content::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .dropdown-content::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px;
+    }
+    .dropdown-content::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+
+    /* Flip upward class — toggled by JS when dropdown would go off-screen */
+    .dropdown-content.drop-up {
+      top: auto;
+      bottom: calc(100% + 8px);
+    }
+
+    .dropdown:hover .dropdown-content { display: block; }
+
+    .dropdown-content ul { list-style: none; padding: 8px; }
+
+    .dropdown-content a {
+      color: var(--text-mid) !important;
+      padding: 10px 14px !important;
+      display: block;
+      font-size: 0.875rem;
+      border-radius: 6px;
+      transition: all 0.15s;
+    }
+
+    .dropdown-content a:hover {
+      background: var(--surface) !important;
+      color: var(--primary) !important;
+    }
+
+    /* ── HERO ── */
+    #home {
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      background: var(--primary);
+      overflow: hidden;
+    }
+
+    #home::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('mold-inspection.jpg') center/cover no-repeat;
+      opacity: 0.18;
+    }
+
+    #home::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: var(--white);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 32px 100px;
+      text-align: center;
+    }
+
+    .hero-inner h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+
+    .hero-accent-line {
+      width: 64px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+      margin: 0 auto;
+    }
+
+    /* ── BANNER ── */
+    .banner-container {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .banner-image {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── INTRODUCTION ── */
+    #introduction {
+      background: var(--white);
+      padding: 80px 0 60px;
+    }
+
+    #introduction .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .heading h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 900;
+      color: var(--primary);
+      background: var(--surface);
+      border-left: 5px solid var(--accent);
+      padding: 18px 24px;
+      border-radius: 4px;
+      margin: 0 0 28px;
+      letter-spacing: -0.5px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+      max-width: 820px;
+      margin: 0 auto 24px;
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin: 32px 0;
+    }
+
+    .toc ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 10px; }
+
+    .toc ul li a {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+
+    .toc ul li a::before { content: '→'; color: var(--accent); }
+    .toc ul li a:hover { color: var(--accent); }
+
+    /* ── CONTENT SECTIONS ── */
+    #content-images {
+      background: var(--surface);
+      padding: 80px 0;
+    }
+
+    #content-images .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* ── ALTERNATING CONTENT ROWS ── */
+    .content-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      margin-bottom: 80px;
+      gap: 0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(10,37,64,0.07);
+      background: var(--white);
+    }
+
+    .content-row.img-left .content-img-wrap  { order: 1; }
+    .content-row.img-left .content-text-wrap { order: 2; }
+
+    .content-row.img-right .content-text-wrap { order: 1; }
+    .content-row.img-right .content-img-wrap  { order: 2; }
+
+    .content-img-wrap {
+      overflow: hidden;
+      height: 420px;
+      position: relative;
+    }
+
+    .content-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .content-row:hover .content-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .content-text-wrap {
+      padding: 48px 52px;
+      background: var(--white);
+    }
+
+    .content-row.img-right .content-text-wrap {
+      background: var(--surface);
+    }
+
+    @media (max-width: 768px) {
+      .content-row {
+        grid-template-columns: 1fr;
+      }
+      .content-row.img-left .content-img-wrap,
+      .content-row.img-left .content-text-wrap,
+      .content-row.img-right .content-img-wrap,
+      .content-row.img-right .content-text-wrap {
+        order: unset;
+      }
+      .content-img-wrap { height: 240px; }
+      .content-text-wrap { padding: 28px 24px; }
+    }
+
+    .sub-section {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 20px 22px;
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+      transition: box-shadow 0.25s;
+    }
+
+    .sub-section:hover {
+      box-shadow: 0 6px 24px rgba(10,37,64,0.08);
+    }
+
+    .sub-section h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .sub-section p { color: var(--text-light); font-size: 0.9rem; line-height: 1.6; }
+
+    .content-text-wrap h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .content-text-wrap h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .content-text-wrap p {
+      color: var(--text-mid);
+      font-size: 0.97rem;
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .content-text-wrap ul,
+    .content-text-wrap ol {
+      color: var(--text-mid);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    .content-text-wrap ul li,
+    .content-text-wrap ol li {
+      margin-bottom: 6px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    /* ── FAQs ── */
+    #faqs {
+      background: var(--white);
+      padding: 80px 0;
+    }
+
+    #faqs .max-w-7xl {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    #faqs h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 900;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    #faqs .faq-subtitle {
+      text-align: center;
+      color: var(--text-light);
+      margin-bottom: 48px;
+      font-size: 1rem;
+    }
+
+    .faq-section { display: flex; flex-direction: column; gap: 12px; }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: box-shadow 0.25s;
+    }
+
+    .faq-item:hover { box-shadow: 0 4px 20px rgba(10,37,64,0.08); }
+
+    .faq-question {
+      cursor: pointer;
+      padding: 18px 22px;
+      background: var(--surface);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.97rem;
+      color: var(--primary);
+      transition: background 0.2s;
+      border: none;
+    }
+
+    .faq-question:hover { background: var(--accent-light); }
+
+    .faq-question .faq-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.85rem;
+      color: var(--accent);
+      transition: transform 0.3s;
+    }
+
+    .faq-open .faq-question { background: var(--accent-light); }
+    .faq-open .faq-icon { transform: rotate(45deg); border-color: var(--accent); }
+
+    .faq-answer {
+      display: none;
+      padding: 18px 22px;
+      background: var(--white);
+      color: var(--text-mid);
+      font-size: 0.92rem;
+      line-height: 1.75;
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-open .faq-answer { display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.7);
+      padding: 64px 0 32px;
+    }
+
+    footer .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    footer h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    footer p, footer a {
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.6);
+    }
+
+    footer a {
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--accent); }
+
+    footer ul { list-style: none; padding: 0; }
+
+    footer ul li {
+      margin-bottom: 8px;
+    }
+
+    footer ul li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer ul li a::before {
+      content: '›';
+      color: var(--accent);
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .footer-bottom {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ── WHEEL LINKS ── */
+    .wheel-links-wrapper {
+      margin-top: 40px;
+      padding: 28px;
+      background: var(--surface);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    /* ── FULL SECTION ── */
+    .full-section {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* ── MAP ── */
+    .map-embed iframe {
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(10,37,64,0.12);
+      width: 100%;
+      max-width: 1100px;
+      height: 450px;
+      border: none;
+    }
+
+    /* ── SCROLL ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim { animation: fadeUp 0.6s ease both; }
+    .anim-d1 { animation-delay: 0.1s; }
+    .anim-d2 { animation-delay: 0.2s; }
+    .anim-d3 { animation-delay: 0.3s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .upper-menu { padding: 0 16px; }
+      .menu-links { gap: 4px; }
+      .menu-links a { padding: 6px 8px; font-size: 0.8rem; }
+      .hero-inner { padding: 60px 20px 80px; }
+      #content-images .md\:w-1\/2 { padding: 24px 20px; }
+      .toc ul { grid-template-columns: 1fr; }
+    }
+  </style>
+
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Our Company",
+  "description": "Auto Window Tinting service in Indian Land, SC - Auto Window Tinting service in Indian Land, SC services",
+  "url": "/auto-window-tinting-service-in-indian-land-sc",
+  "telephone": "",
+  "email": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": ""
+  }
+}
+</script>
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <div class="upper-menu">
+    <div class="brand-name">
+      <a href="index.html">Black Bear Protective Films</a>
+    </div>
+    <div class="menu-links">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#services" class="dropbtn">Services ▼</a>
+        <div class="dropdown-content" id="servicesDropdown">
+          <ul>
+            <li><a href="index.html">Window tinting service in Indian Land, SC</a></li>
+<li><a href="/auto-window-tinting-service-in-indian-land-sc">Auto Window Tinting service in Indian Land, SC</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+  </div>
+
+
+  <!-- ══ HERO ══ -->
+  <section id="home">
+    <div class="hero-inner">
+      <h1>Auto Window Tinting service in Indian Land, SC</h1>
+      <div class="hero-accent-line"></div>
+    </div>
+  </section>
+
+  <!-- ══ BANNER ══ -->
+  <section class="banner-container">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Black Bear Protective Films Banner" class="banner-image">
+  </section>
+
+
+  <!-- ══ INTRODUCTION ══ -->
+  <section id="introduction" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+
+      <!-- IF_LINK_WHEEL_START -->
+      
+      <!-- IF_LINK_WHEEL_END -->
+    </div>
+  </section>
+
+
+  <!-- ══ CONTENT WITH IMAGES ══ -->
+  <section id="content-images" class="py-20 bg-gray-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="content-row img-left"><div class="content-img-wrap"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Auto Window Tinting service in Indian Land, SC - 1" loading="lazy"></div><div class="content-text-wrap"><h3>Auto Window Tinting service in Indian Land, SC</h3></div></div>
+<div class="content-row img-right"><div class="content-text-wrap"><h3>Window tinting service in Indian Land, SC</h3></div><div class="content-img-wrap"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Auto Window Tinting service in Indian Land, SC - 2" loading="lazy"></div></div>
+<div class="content-row img-left"><div class="content-img-wrap"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Auto Window Tinting service in Indian Land, SC - 3" loading="lazy"></div><div class="content-text-wrap"><h3>Auto Window Tinting service in Indian Land, SC</h3></div></div>
+<div class="content-row img-right"><div class="content-text-wrap"><h3>Window tinting service in Indian Land, SC</h3></div><div class="content-img-wrap"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Auto Window Tinting service in Indian Land, SC - 4" loading="lazy"></div></div>
+<div class="content-row img-left"><div class="content-img-wrap"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80" alt="Auto Window Tinting service in Indian Land, SC - 5" loading="lazy"></div><div class="content-text-wrap"><h3>Window tinting service in Indian Land, SC</h3></div></div>
+<div class="content-row img-right"><div class="content-text-wrap"><h3>Auto Window Tinting service in Indian Land, SC</h3></div><div class="content-img-wrap"><img src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=900&q=80" alt="Auto Window Tinting service in Indian Land, SC - 6" loading="lazy"></div></div>
+<div class="content-row img-left"><div class="content-img-wrap"><img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=900&q=80" alt="Auto Window Tinting service in Indian Land, SC - 7" loading="lazy"></div><div class="content-text-wrap"><h3>Auto Window Tinting service in Indian Land, SC</h3></div></div></div></section>
+
+
+  <!-- ══ FAQs ══ -->
+  <section id="faqs" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-6">
+        <section class="faq-section space-y-4">
+          
+          
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+          <p class="text-gray-400 mb-2"></p>
+          <p class="text-gray-400">Phone: <a href="tel:"></a></p>
+          <p class="text-gray-400"><a href="#" class="text-gray-400 hover:text-white" rel="Nofollow">#</a></p>
+       <p class="text-gray-400"><a href="/sitemap.html" class="text-gray-400 hover:text-white" rel="Nofollow">Sitemap</a></p>
+
+        </div>
+
+        <!-- Important Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Important Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Our Services</a></li>
+          </ul>
+        </div>
+
+   <!-- Social (slot available) -->
+<div class="social"><span class="text-gray-500 text-sm">Follow our official channels</span></div>
+      </div>
+
+
+      <div class="footer-bottom mt-8 text-center text-gray-400">Copyright © 2026 Black Bear Protective Films. All rights reserved.</div>
+    </div>
+  </footer>
+
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('faq-open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('faq-open'));
+        if (!isOpen) item.classList.add('faq-open');
+      });
+    });
+
+    // ── DROPDOWN: flip upward if it would overflow the bottom of the viewport ──
+    document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+      dropdown.addEventListener('mouseenter', function() {
+        var content = this.querySelector('.dropdown-content');
+        if (!content) return;
+
+        // Reset any previous flip so we can measure correctly
+        content.classList.remove('drop-up');
+        content.style.display = 'block';
+
+        var rect = content.getBoundingClientRect();
+        var viewportHeight = window.innerHeight;
+
+        // If the bottom edge goes off-screen, flip it upward
+        if (rect.bottom > viewportHeight) {
+          content.classList.add('drop-up');
+        }
+
+        // Recalculate max-height based on available space
+        if (content.classList.contains('drop-up')) {
+          // Space above the navbar trigger
+          var triggerRect = this.getBoundingClientRect();
+          content.style.maxHeight = (triggerRect.top - 16) + 'px';
+        } else {
+          // Space below the navbar
+          content.style.maxHeight = (viewportHeight - rect.top - 16) + 'px';
+        }
+      });
+
+      dropdown.addEventListener('mouseleave', function() {
+        var content = this.querySelector('.dropdown-content');
+        if (!content) return;
+        content.style.display = '';
+        content.style.maxHeight = '';
+      });
+    });
+  </script>
+</body>
+</html>
